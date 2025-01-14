@@ -27,7 +27,7 @@ const ISR: NextPage<ISRProps> = (props) => {
                     {message}
                 </p>
                 <Link href="/ssr">
-                    go to ssr
+                    <button>go to ssr</button>
                 </Link>
             </main>
         </div>

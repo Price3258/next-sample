@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["example.com"],
   },
+  reactStrictMode: true,
+  compiler: {
+    styledComponents: true
+  }
 };
 
 export default nextConfig;

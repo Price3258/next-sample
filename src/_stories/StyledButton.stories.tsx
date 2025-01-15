@@ -9,6 +9,7 @@ const meta: Meta<typeof StyledButton> = {
             options: ['primary', 'success', 'transparent'],
             control: { type: 'radio' },
         },
+        onClick: { action: 'clicked' },
     },
 };
 

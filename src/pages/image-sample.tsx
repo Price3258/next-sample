@@ -7,12 +7,6 @@ const ImageSample: NextPage<void> = () => {
     return (
         <div>
             <h1>Image Sample</h1>
-            <img
-                style={{
-                    width: "50%"
-                }}
-                src="/images/cat.jpg"
-                alt="cat" />
             {/* 이미지 컴포넌트를 사용하면 브라우저의 정보를 기반으로 최적화한 이미지를 제공 */}
             <Image
                 src={CatImage}

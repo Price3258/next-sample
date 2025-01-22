@@ -57,6 +57,7 @@ const Template: StoryFn<{ variant: keyof typeof variants }> = (args) => {
 };
 
 export const Test = Template.bind({});
+
 Test.args = {
     variant: 'success', // 기본 variant 값
 };

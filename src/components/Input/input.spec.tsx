@@ -27,4 +27,15 @@ describe('Input', () => {
         expect(inputNode).toHaveValue(inputText)
     })
 
+    it('should reset when user clicks button', () => {
+        const inputText = "test input text"
+        const inputNode = screen.getByLabelText('Username') as HTMLInputElement
+        const buttonNode = screen.getByRole('button', { name: 'Reset' })
+
+        fireEvent.change(inputNode, { target: { value: inputText } })
+        fireEvent.click(buttonNode)
+
+        expect(inputNode).toHaveValue('')
+    })
+
 })

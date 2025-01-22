@@ -17,8 +17,8 @@ export const Input = (props: InputProps) => {
 
     return (
         <div>
-            <label htmlFor={props.id}>{label}</label>
-            <input {...rest} value={text} onChange={onChange} />
+            {/* <label htmlFor={props.id}>{label}</label> */}
+            <input {...rest} value={text} onChange={onChange} aria-label={label} />
             <button onClick={onClickReset}>Reset</button>
         </div>
     )

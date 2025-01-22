@@ -21,9 +21,6 @@ export const Primary: Story = {
     args: {
         variant: 'primary',
         children: 'Primary Button', // 기본 텍스트 추가
-        onClick: () => {
-            console.log('Primary button clicked!');
-        }
     },
 };
 
